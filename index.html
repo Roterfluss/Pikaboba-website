@@ -22,6 +22,81 @@
 
   <main>
     <!-- Các section sẽ thêm ở bước sau -->
+     <section id="hero">
+        <h1>Ihr zuverlässiger Bubble Tea
+             Großhändler in der DACH-Region</h1>
+        <p class="hero-sub">
+            Über 200 B2B-Kunden vertrauen uns.
+            Premium-Marken Boboq &amp; Possmei
+            — direkt ab Lager Stuttgart.
+        </p>
+        <a href="#kontakt" class="cta-button">
+            Jetzt Angebot anfragen
+        </a>
+    </section>
+   
+    <section id="produkte">
+        <h2>Unsere Produkte</h2>
+        <div class="product-grid">
+
+            <article class="product-card">
+            <h3>Tapioka Perlen</h3>
+                <p>Marke: Boboq</p>
+                <p class="price">ab 45,00 €/Karton</p>
+            </article>
+
+            <article class="product-card">
+            <h3>Taro Pulver</h3>
+                <p>Marke: Possmei</p>
+                <p class="price">ab 38,50 €/Karton</p>
+            </article>
+
+            <article class="product-card">
+                <h3>Fruchtsirup</h3>
+                    <p>Marke: Possmei</p>
+                    <p class="price">ab 32,00 €/Karton</p>
+            </article>
+
+            <article class="product-card">
+                <h3>Popping Boba</h3>
+                    <p>Marke: Boboq</p>
+                    <p class="price">ab 52,00 €/Karton</p>
+            </article>
+
+  </div>
+</section>
+<section id="kontakt">
+  <h2>Kontaktieren Sie uns</h2>
+  <form class="contact-form">
+
+    <label for="firma">Firmenname *</label>
+    <input type="text" id="firma" name="firma"
+           placeholder="z.B. Bubble House GmbH"
+           required>
+
+    <label for="email">E-Mail *</label>
+    <input type="email" id="email" name="email"
+           placeholder="info@beispiel.de"
+           required>
+
+    <label for="land">Land</label>
+    <select id="land" name="land">
+      <option value="">Bitte wählen</option>
+      <option value="de">Deutschland</option>
+      <option value="at">Österreich</option>
+      <option value="ch">Schweiz</option>
+      <option value="cz">Tschechien</option>
+    </select>
+
+    <label for="nachricht">Ihre Nachricht</label>
+    <textarea id="nachricht" name="nachricht"
+              rows="4"
+              placeholder="Welche Produkte interessieren Sie?"></textarea>
+
+    <button type="submit">Anfrage senden</button>
+
+  </form>
+</section>
   </main>
 
   <footer>
