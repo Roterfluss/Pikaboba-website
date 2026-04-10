@@ -283,7 +283,7 @@ const translations = {
     produkte: "Unsere Produkte",
     vorteile: "Warum PikaBoba?",
     kontakt: "Kontaktieren Sie uns",
-    senden: "Anfrage senden"
+    senden: "Anfrage senden",
     navProdukte: "Produkte",
     navVorteile: "Vorteile",
     navKontakt: "Kontakt"
@@ -295,7 +295,7 @@ const translations = {
     produkte: "Our Products",
     vorteile: "Why PikaBoba?",
     kontakt: "Contact Us",
-    senden: "Send Inquiry"
+    senden: "Send Inquiry",
     navProdukte: "Products",
     navVorteile: "Benefits",
     navKontakt: "Contact"
@@ -307,7 +307,7 @@ const translations = {
     produkte: "Sản phẩm",
     vorteile: "Tại sao chọn PikaBoba?",
     kontakt: "Liên hệ",
-    senden: "Gửi yêu cầu"
+    senden: "Gửi yêu cầu",
     navProdukte: "Sản phẩm",
     navVorteile: "Ưu điểm",
     navKontakt: "Liên hệ"
