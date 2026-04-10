@@ -39,29 +39,30 @@
         <h2>Unsere Produkte</h2>
         <div class="product-grid">
 
-            <article class="product-card">
-            <h3>Tapioka Perlen</h3>
-                <p>Marke: Boboq</p>
-                <p class="price">ab 45,00 €/Karton</p>
-            </article>
+            // === RENDER SẢN PHẨM ===
+            const productGrid =
+                document.querySelector(".product-grid");
 
-            <article class="product-card">
-            <h3>Taro Pulver</h3>
-                <p>Marke: Possmei</p>
-                <p class="price">ab 38,50 €/Karton</p>
-            </article>
+            function renderProdukte(list) {
+              // Xóa nội dung cũ
+              productGrid.innerHTML = "";
 
-            <article class="product-card">
-                <h3>Fruchtsirup</h3>
-                    <p>Marke: Possmei</p>
-                    <p class="price">ab 32,00 €/Karton</p>
-            </article>
+              // Tạo card cho mỗi sản phẩm
+              list.forEach(produkt => {
+                  const card = document.createElement("article");
+                  card.classList.add("product-card");
+                  card.innerHTML = `
+                    <h3>${produkt.name}</h3>
+                    <p>Marke: ${produkt.marke}</p>
+                    <p>Einheit: ${produkt.einheit}</p>
+                    <p class="price">ab ${produkt.preis.toFixed(2)} €/Karton</p>
+                `;
+    productGrid.appendChild(card);
+  });
+}
 
-            <article class="product-card">
-                <h3>Popping Boba</h3>
-                    <p>Marke: Boboq</p>
-                    <p class="price">ab 52,00 €/Karton</p>
-            </article>
+// Render lần đầu — hiện tất cả sản phẩm
+renderProdukte(produkte);
 
   </div>
 </section>

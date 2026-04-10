@@ -45,3 +45,27 @@ const produkte = [
 ];
 
 console.log("Produkte geladen:", produkte.length);
+// === RENDER SẢN PHẨM ===
+            const productGrid =
+                document.querySelector(".product-grid");
+
+            function renderProdukte(list) {
+              // Xóa nội dung cũ
+              productGrid.innerHTML = "";
+
+              // Tạo card cho mỗi sản phẩm
+              list.forEach(produkt => {
+                  const card = document.createElement("article");
+                  card.classList.add("product-card");
+                  card.innerHTML = `
+                    <h3>${produkt.name}</h3>
+                    <p>Marke: ${produkt.marke}</p>
+                    <p>Einheit: ${produkt.einheit}</p>
+                    <p class="price">ab ${produkt.preis.toFixed(2)} €/Karton</p>
+                `;
+    productGrid.appendChild(card);
+  });
+}
+
+// Render lần đầu — hiện tất cả sản phẩm
+renderProdukte(produkte);
