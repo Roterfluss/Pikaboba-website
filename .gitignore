@@ -1,0 +1,21 @@
+# Thư mục dependencies — rất nặng, không push lên GitHub
+node_modules/
+
+# File môi trường — chứa mật khẩu, API key
+.env
+.env.local
+
+# File hệ điều hành tự tạo — không liên quan đến code
+.DS_Store
+Thumbs.db
+
+# File cấu hình editor cá nhân
+.vscode/
+*.swp
+
+# File build — tự tạo lại được
+dist/
+build/
+
+# File log — không cần lưu
+*.log
