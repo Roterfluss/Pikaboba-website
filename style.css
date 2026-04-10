@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* === RESET & BASE === */
 * {
   margin: 0;
@@ -314,4 +317,198 @@ td {
 
 tbody tr:hover {
   background: #f9fafb;
+}
+/* === FILTER BUTTONS === */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #f59e0b;
+}
+
+.filter-btn.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: white;
+  font-weight: 600;
+}
+/* === SEARCH === */
+.search-input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245,158,11,0.15);
+}
+/* === BESTELLRECHNER === */
+#rechner {
+  padding: 3rem 2rem;
+  background: #f0f4f8;
+}
+
+#rechner h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rechner-wrap {
+  max-width: 450px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.rechner-row {
+  margin-bottom: 1rem;
+}
+
+.rechner-row label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+  color: #374151;
+}
+
+.rechner-row select,
+.rechner-row input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.rechner-result {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 2px solid #e5e7eb;
+}
+
+.rechner-result p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.rechner-result .total {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1a1a2e;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+#versand-hinweis {
+  color: #047857;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+/* === ADD BUTTON & WARENKORB === */
+.add-btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: #f59e0b;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #d97706;
+}
+
+#warenkorb {
+  margin-bottom: 1rem;
+}
+
+.warenkob-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.warenkob-item .item-info {
+  flex: 1;
+}
+
+.warenkob-item .item-preis {
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #dc2626;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+}
+/* === LANGUAGE SWITCH === */
+.lang-switch {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: transparent;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.lang-btn.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #1a1a2e;
+  font-weight: 600;
 }
