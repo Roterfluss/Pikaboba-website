@@ -284,6 +284,9 @@ const translations = {
     vorteile: "Warum PikaBoba?",
     kontakt: "Kontaktieren Sie uns",
     senden: "Anfrage senden"
+    navProdukte: "Produkte",
+    navVorteile: "Vorteile",
+    navKontakt: "Kontakt"
   },
   en: {
     hero: "Your Reliable Bubble Tea Wholesaler in the DACH Region",
@@ -293,6 +296,9 @@ const translations = {
     vorteile: "Why PikaBoba?",
     kontakt: "Contact Us",
     senden: "Send Inquiry"
+    navProdukte: "Products",
+    navVorteile: "Benefits",
+    navKontakt: "Contact"
   },
   vi: {
     hero: "Nhà phân phối Bubble Tea uy tín tại khu vực DACH",
@@ -302,6 +308,9 @@ const translations = {
     vorteile: "Tại sao chọn PikaBoba?",
     kontakt: "Liên hệ",
     senden: "Gửi yêu cầu"
+    navProdukte: "Sản phẩm",
+    navVorteile: "Ưu điểm",
+    navKontakt: "Liên hệ"
   }
 }; // end of translations
 
@@ -326,6 +335,10 @@ langButtons.forEach(btn => {
     if (vorteilH2) {
       vorteilH2.textContent = t.vorteile;
     } // end of if vorteilH2
+    const navLinks = document.querySelectorAll(".nav-links a");
+    navLinks[0].textContent = t.navProdukte;
+    navLinks[1].textContent = t.navVorteile;
+    navLinks[2].textContent = t.navKontakt;
 
     console.log("Sprache:", lang);
   }); // end of addEventListener click
